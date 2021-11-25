@@ -16,11 +16,6 @@ export default {
     TheHeader,
     TheFooter,
   },
-  watch: {
-    $route() {
-      this.$store.replaceState({});
-    },
-  },
 };
 </script>
 
