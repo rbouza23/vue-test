@@ -1,0 +1,28 @@
+.navigation {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item ~ &__item {
+    margin-left: 10px;
+  }
+
+  &__link {
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.4rem;
+  }
+
+  &__link.router-link-exact-active {
+    color: $color-primary;
+    font-weight: 500;
+    pointer-events: none;
+  }
+
+  @include media-breakpoint-min(lg) {
+    &__link:hover {
+      color: $color-primary;
+    }
+  }
+}

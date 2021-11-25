@@ -1,0 +1,47 @@
+{
+  "extends": ["stylelint-config-sass-guidelines", "stylelint-config-prettier"],
+  "ignoreFiles": [
+    "**/*.css",
+    "node_modules/**/*",
+    "scss/vendors/**/*.scss",
+    "src/scss/vendors/**/*.scss",
+    "dist/**/*",
+    "web/**/*"
+  ],
+  "defaultSeverity": "error",
+  "plugins": [
+    "stylelint-order",
+    "stylelint-config-rational-order/plugin",
+    "stylelint-declaration-block-no-ignored-properties"
+  ],
+  "rules": {
+    "indentation": 2,
+    "max-nesting-depth": 3,
+    "selector-max-compound-selectors": 4,
+    "string-quotes": "single",
+    "selector-class-pattern": "^(?:(?:o|c|u|t|s|is|has|_|js|qa)-)?[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*(?:__[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*)?(?:--[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*)?(?:\\[.+\\])?$",
+    "selector-no-qualifying-type": [
+      true,
+      {
+        "ignore": ["attribute"]
+      }
+    ],
+    "order/order": ["custom-properties", "declarations"],
+    "order/properties-order": [
+      [],
+      {
+        "severity": "warning"
+      }
+    ],
+    "order/properties-alphabetical-order": null,
+    "plugin/declaration-block-no-ignored-properties": true,
+    "plugin/rational-order": [
+      true,
+      {
+        "border-in-box-model": false,
+        "empty-line-between-groups": false,
+        "severity": "warning"
+      }
+    ]
+  }
+}

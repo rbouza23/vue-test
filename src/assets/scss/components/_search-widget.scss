@@ -1,0 +1,57 @@
+.search-widget {
+  min-height: 400px;
+  padding: 30px 0;
+
+  &__list {
+    padding: 30px 0;
+  }
+
+  &__list--no-results {
+    color: $color-gray-400;
+    text-align: center;
+  }
+
+  &__list-item {
+    display: block;
+    padding: 15px 0;
+    color: $color-gray-500;
+  }
+
+  &__list-item ~ &__list-item {
+    margin-top: 10px;
+    border-top: 1px solid $color-gray-100;
+  }
+
+  &__item-name {
+    font-weight: 600;
+  }
+
+  &__item-description {
+    margin: 7px 0;
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+
+  &__item-author {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 1.3rem;
+    font-style: italic;
+  }
+
+  &__item-avatar {
+    flex-shrink: 0;
+    max-width: 28px;
+    margin-right: 5px;
+    overflow: hidden;
+    border: 1px solid $color-gray-200;
+    border-radius: 100%;
+  }
+
+  &__no-results-icon {
+    display: block;
+    max-width: 220px;
+    margin: 0 auto;
+  }
+}

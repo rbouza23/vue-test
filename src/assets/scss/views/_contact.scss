@@ -1,0 +1,9 @@
+.view--contact {
+  padding: 0;
+
+  .header-background {
+    min-height: 450px;
+    background: url('~@/assets/img/views/contact/header.jpeg') no-repeat center;
+    background-size: cover;
+  }
+}

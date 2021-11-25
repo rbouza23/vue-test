@@ -1,0 +1,28 @@
+html,
+body {
+  position: relative;
+  font-family: $font-primary;
+}
+
+html,
+body,
+.app {
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding-top: $header-height;
+  font-size: 1.6rem;
+}
+
+a {
+  @include custom-transition;
+}
+
+/* Custom scrollbar Desktop */
+@include media-breakpoint-min(lg) {
+  @include custom-scrollbar;
+}

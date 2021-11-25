@@ -1,0 +1,23 @@
+/* Text uppercase */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* Text ellipsis */
+.text-ellipsis {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Text no wrap */
+.text-no-wrap {
+  white-space: nowrap;
+}
+
+/* Flex break */
+.flex-break {
+  flex-basis: 100%;
+  height: 0;
+}

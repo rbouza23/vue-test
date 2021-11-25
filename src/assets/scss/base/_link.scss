@@ -1,0 +1,18 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+
+  &__icon {
+    margin-right: 5px;
+  }
+
+  &--primary {
+    color: $color-primary;
+  }
+
+  @include media-breakpoint-min(lg) {
+    &--primary:hover {
+      color: $color-secondary;
+    }
+  }
+}

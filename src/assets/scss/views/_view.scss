@@ -1,0 +1,12 @@
+.view {
+  padding: 60px 0;
+
+  .view__content {
+    padding: 60px;
+  }
+
+  .heading + .paragraph,
+  .paragraph + .link {
+    margin-top: 30px;
+  }
+}

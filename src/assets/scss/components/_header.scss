@@ -1,0 +1,27 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  width: 100%;
+  height: $header-height;
+  background-color: $color-secondary;
+  box-shadow: 0 10px 10px -10px transparentize(#000, 0.5);
+
+  &__logo {
+    width: 50px;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+  }
+
+  .col--nav {
+    justify-self: end;
+  }
+}
